@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header {
+
+    font-size: 40px;
+    color: #333;
+    display: block;
+    padding-top: 50px;
+    padding-left: 40px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11px;
+
+    width: 100%;
+    margin-left: 30px;
+    position: relative;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.container-left {
+    gap: 10px;
+    width: 60%;
+
+}
+
+.image {
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.common-box {
+    text-align: center;
+
+    font-size: 15px;
+    color: #333;
+    border: thin solid black;
+    border-radius: 30px;
+    position: absolute;
+    height: 30px;
+    width: 165px;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 35px;
+    padding-left: 22px;
+    padding-right: 17px;
+
+    z-index: 1;
+    /* base layer */
+}
+
+#cart {
+    position: relative;
+    right: 5px;
+    top: 4px;
+
+}
+
+#decrement-icon {
+    position: relative;
+    right: 50px;
+    bottom: 4px;
+
+    /* border: thin solid wheat; */
+    /* border-radius: 1px; */
+    /* top: 4px; */
+}
+
+#increment-icon {
+    position: relative;
+    left: 45px;
+    bottom: 2px;
+}
+
+#deliver-descriptiopn-icon {
+    position: relative;
+    top: 5px;
+    right: 20px;
+}
+
+.common-box2 {
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    border: thin solid black;
+    border-radius: 30px;
+    position: absolute;
+    height: 30px;
+    width: 165px;
+    background-color: brown;
+    padding-top: 14px;
+    padding-bottom: 30px;
+    padding-left: 22px;
+    padding-right: 17px;
+    z-index: 1;
+    /* base layer */
+
+}
+
+#box1 {
+    top: 19%;
+    left: 3%;
+
+
+}
+
+#box2 {
+    top: 19%;
+    left: 22%;
+
+}
+
+#box3 {
+    top: 19%;
+    left: 42%;
+}
+
+#box4 {
+    top: 52%;
+    left: 3%;
+}
+
+#box5 {
+    top: 52%;
+    left: 22%;
+}
+
+#box6 {
+    top: 52%;
+    left: 42%;
+}
+
+#box7 {
+    top: 86%;
+    left: 3%;
+}
+
+#box8 {
+    top: 86%;
+    left: 22%;
+}
+
+#box9 {
+    top: 86%;
+    left: 42%;
+}
+
+.item-header {
+    font-size: 15px;
+    color: grey;
+    line-height: 30px;
+    padding-top: 25px;
+
+
+
+}
+
+.second-line {
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+    /* line-height: 40px; */
+
+}
+
+/* .cart-icon {
+    left: 20px;
+    font-size: 23px;
+    color: crimson;
+    cursor: pointer;
+    top: 20.6%;
+    left: 4.5%;
+    position: absolute;
+    z-index: 10;
+    
+} */
+
+.price {
+    font-weight: bold;
+    color: crimson;
+    font-size: 18px;
+}
+
+.item-Description1 {
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.card1,
+.card2,
+.card3 {
+    margin-bottom: 30px;
+}
+
+.container-right {
+    height: 50%;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(233, 225, 225, 0.911);
+    padding: 20px;
+}
+
+#your-cart {
+    color: brown;
+    font-size: 20px;
+    /* padding-bottom: 20px; */
+}
+
+.divider {
+
+    margin: 5px 0;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+
+}
+
+
+.product-name {
+    font-size: 15px;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.item-numbers {
+    padding-right: 15px;
+    color: brown;
+    font-weight: bold;
+}
+
+.price1 {
+    padding-right: 10px;
+    color: grey;
+}
+
+.price2 {
+    color: grey;
+    font-weight: bold;
+}
+
+.order {
+    color: gray;
+    font-size: 14px;
+    font-weight: lighter;
+    padding-top: 20px;
+}
+
+.order-price {
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+    padding-left: 200px;
+
+}
+
+.deliver-descriptiopn {
+    box-shadow: 0 0 10px rgba(102, 97, 97, 0.911);
+    background-color: whitesmoke;
+    color: gray;
+    font-size: 15px;
+
+    height: 57px;
+    width: 350px;
+    padding-top: 15px;
+    padding-bottom: 38px;
+
+    text-align: center;
+    /* width: 20px; */
+    margin-top: 40px;
+    border-radius: 5px;
+    
+
+}
+
+.confirm-button {
+    margin-top: 20px;
+    margin-left: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    border: thin solid brown;
+    border-radius: 30px;
+    background-color: brown;
+}
