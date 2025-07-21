@@ -5,198 +5,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet"> -->
+    <link rel="stylesheet" href="./bootstrap-5.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
 <body>
 
-    <h1 class="header">Dessert</h1>
+    <!-- <h1>Boostrap</h1> -->
 
-    <div class="container">
+    <div class="container-fluid  border text-light text-center bg">
 
-        <div class="container-left">
+        <nav class="navbar navbar-expand-lg mt-8" >
+            <div class="container-fluid">
+                <!-- Navbar brand/logo -->
+                <a class="navbar-brand text-white " href="#"  id="logo">
+                    <ion-icon name="pencil-outline"></ion-icon>
+                </a>
 
-            <div class="cards">
-                <div class="card1">
+                <!-- Mobile toggle -->
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <img src="image/image1.jpg" alt="" class="image">
-
-                    <h1 id="box1" class="common-box"><img src="./icons/icon-add-to-cart.svg" alt="" id="cart"><a
-                            href="">Add to Cart</a>
-                    </h1>
-                    <p class="item-header">
-                        Waffle <br>
-                        <span class="second-line">Waffle with Berries</span>
-                        <br>
-                        <span class="price">6.50</span>
-                    </p>
+                <!-- Nav items -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+                    <ul class="navbar-nav mb-2 mt-40 mb-lg-0">
+                        <li id="first-item" class="nav-item ">
+                            <a class="nav-link text-white" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Testimonials</a>
+                        </li>
+                        <li id="last-item" class="nav-item">
+                            <a class="nav-link text-white" href="#">Download</a>
+                        </li>
+                    </ul>
                 </div>
-
-                <div class="card1">
-                    <img src="image/image2.jpg" alt="" class="image">
-                    <h1 id="box2" class="common-box2"> <img src="./icons/icon-decrement-quantity.svg" alt=""
-                            id="decrement-icon">4 <img src="./icons/icon-increment-quantity.svg" alt=""
-                            id="increment-icon">
-
-                    </h1>
-                    <p class="item-header">
-                        Waffle <br>
-                        <span class="second-line">Waffle with Berries</span>
-                        <br>
-                        <span class="price">6.50</span>
-                    </p>
-                </div>
-
-                <div class="card1">
-                    <img src="image/image3.jpg" alt="" class="image">
-                    <h1 id="box3" class="common-box"><img src="./icons/icon-add-to-cart.svg" alt="" id="cart">Add to
-                        Cart</h1>
-                    <p class="item-header">
-                        Waffle <br>
-                        <span class="second-line">Waffle with Berries</span>
-                        <br>
-                        <span class="price">6.50</span>
-                    </p>
-
-                </div>
-
             </div>
-
-            <div class="cards">
-                <div class="card1">
-                    <img src="image/image4.jpg" alt="" class="image">
-                    <h1 id="box4" class="common-box2"><img src="./icons/icon-decrement-quantity.svg" alt=""
-                            id="decrement-icon">4 <img src="./icons/icon-increment-quantity.svg" alt=""
-                            id="increment-icon">
-                    </h1>
-                    <p class="item-header">
-                        Waffle <br>
-                        <span class="second-line">Waffle with Berries</span>
-                        <br>
-                        <span class="price">6.50</span>
-                    </p>
-                </div>
-
-                <div class="card1">
-                    <img src="image/image5.jpg" alt="" class="image">
-                    <h1 id="box5" class="common-box"><img src="./icons/icon-add-to-cart.svg" alt="" id="cart">Add Card
-                    </h1>
-                    <p class="item-header">
-                        Waffle <br>
-                        <span class="second-line">Waffle with Berries</span>
-                        <br>
-                        <span class="price">6.50</span>
-                    </p>
-                </div>
-
-                <div class="card1">
-                    <img src="image/image6.jpg" alt="" class="image">
-                    <h1 id="box6" class="common-box"><img src="./icons/icon-add-to-cart.svg" alt="" id="cart">Add Card
-                    </h1>
-                    <p class="item-header">
-                        Waffle <br>
-                        <span class="second-line">Waffle with Berries</span>
-                        <br>
-                        <span class="price">6.50</span>
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="cards">
-                <div class="card1">
-                    <img src="image/image7.jpg" alt="" class="image">
-                    <h1 id="box7" class="common-box"><img src="./icons/icon-add-to-cart.svg" alt="" id="cart">Add to
-                        Cart
-                    </h1>
-                    <p class="item-header">
-                        Waffle <br>
-                        <span class="second-line">Waffle with Berries</span>
-                        <br>
-                        <span class="price">6.50</span>
-                    </p>
-                </div>
-
-                <div class="card1">
-                    <img src="image/image8.jpg" alt="" class="image">
-                    <h1 id="box8" class="common-box"><img src="./icons/icon-add-to-cart.svg" alt="" id="cart">Add Card
-                    </h1>
-                    <p class="item-header">
-                        Waffle <br>
-                        <span class="second-line">Waffle with Berries</span>
-                        <br>
-                        <span class="price">6.50</span>
-                    </p>
-                </div>
-
-                <div class="card1">
-                    <img src="image/image9.jpg" alt="" class="image">
-                    <h1 id="box9" class="common-box2"><img src="./icons/icon-decrement-quantity.svg" alt=""
-                            id="decrement-icon">4 <img src="./icons/icon-increment-quantity.svg" alt=""
-                            id="increment-icon"></h1>
-                    <p class="item-header">
-                        Waffle <br>
-                        <span class="second-line">Waffle with Berries</span>
-                        <br>
-                        <span class="price">6.50</span>
-                    </p>
-
-                </div>
-
-            </div>
+        </nav>
 
 
+        <h1 class="text-uppercase">your favorite <br>one page multi purpose template</h1>
 
-
-
-
-
-        </div>
-        <div class="container-right">
-            <h1 id="your-cart">Your Cart(7)</h1>
-            <h2 class="product-name">Classic Tiramisu</h2>
-            <p><span class="item-numbers">1x </span> <span class="price1">@5.50</span> <span class="price2">@5.50</span>
-            </p>
-            <div class="divider">
-                <!-- <span></span> -->
-            </div>
-
-            <h2 class="product-name">Classic Tiramisu</h2>
-            <p><span class="item-numbers">1x </span> <span class="price1">@5.50</span> <span class="price2">@5.50</span>
-            </p>
-            <div class="divider">
-                <!-- <span></span> -->
-            </div>
-
-            <h2 class="product-name">Classic Tiramisu</h2>
-            <p><span class="item-numbers">1x </span> <span class="price1">@5.50</span> <span class="price2">@5.50</span>
-            </p>
-            <div class="divider">
-                <!-- <span></span> -->
-            </div>
-
-            <h2 class="order">Order Total<span class="order-price">$46.50</span></h2>
-            <h3 class="deliver-descriptiopn"><img src="./icons/icon-carbon-neutral.svg" alt=""
-                    id="deliver-descriptiopn-icon">This is a carbon-neutral delivery</h3>
-
-            <button class="confirm-button">Confirm Order</button>
-
-        </div>
-
-
-
-
-
-
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, <br>amet
+            consectetur
+            adipisicing
+            elit. </p>
+        <button class="btn btn-danger text-light text-capitalize mt-5">FIND OUT MORE</button>
 
     </div>
 
+    <div class="container  mt-5">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <ion-icon name="pencil-outline"></ion-icon>
+                <img src="" alt="">
+                <h1 class="item-heading">EASILY CUSTOMIZED</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit, elit. Incidunt
+                    doloremque.<br>elit. Incidunt doloremque</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="" alt="">
+                <ion-icon name="desktop-outline"></ion-icon>
+                <h1 class="item-heading">Responsive ready</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit, elit. Incidunt
+                    doloremque.<br>elit. Incidunt doloremque</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <ion-icon name="bulb-outline"></ion-icon>
+                <img src="" alt="">
+                <h1 class="item-heading">Modern design</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit, elit. Incidunt
+                    doloremque.<br>elit. Incidunt doloremque</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <ion-icon name="aperture-outline"></ion-icon>
+                <img src="" alt="">
+                <h1 class="item-heading">EASILY CUSTOMIZED</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit, elit. Incidunt
+                    doloremque.<br>elit. Incidunt doloremque</p>
+            </div>
+            <div class="col-md-4 text-center mb-5">
+                <ion-icon name="mail-outline"></ion-icon>
+                <img src="" alt="">
+                <h1 class="item-heading">Responsive ready</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit, elit. Incidunt
+                    doloremque.<br>elit. Incidunt doloremque</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <ion-icon name="cloud-download-outline"></ion-icon>
+                <img src="" alt="">
+                <h1 class="item-heading">Modern design</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit, elit. Incidunt
+                    doloremque.<br>elit. Incidunt doloremque</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./bootstrap-5.3.7-dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
